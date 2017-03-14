@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<HTML>
+	
+	<HEAD>
+
+	<TITLE> Enquete de Clientelle
+	</TITLE>
+
+	<meta charset="utf-8"/>
+	</HEAD>
+
+
+<body>
+
+<header>
+	<h3 class="T1">Enquete Clientelle</h3>
+</header>
+<section >
+	<nav>
+			<menu id="menu">
+			<a href="presentation_entreprise.html">Présentation Entreprise</a>
+			<a href="partenaire.html">Les Partenaires</a>
+			<a href="presentation_projet.html">Présentation projet</a>
+			
+			</menu>
+	</nav>
+
+</section>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<h1>Formulaire d'Enquete</h1>
+
+<article>
+<!-- intro formulaire -->
+<fieldset>
+<p class="para"> Enquete de clientelle</p>
+	<form method="GET" action="#">
+		
+<!-- contenu du formulaire -->
+		<p>
+		<input  type="text" name="nom" id="nom" placeholder="Nom :" size="30" maxlength="20"  autofocus/>
+		<br/>
+		<br/>
+		
+		<input type="text" name="prenom" id="prenom" placeholder="Prenom :" size="30" maxlength="20" autofocus/>
+		
+		<br/>
+		<br/>
+		<input type="email" name="mail" id="mail" placeholder="Mail :" size="30" maxlength="20" required />
+		
+		<!--<label for="url"> URL </label> : <input type="url" name="url" id="url"/>-->
+		<br/>
+		<br/>
+
+
+		<input type="tel" name="telephone" id="telephone" placeholder="TEL:" size="30" maxlength="20" />
+</fieldset>
+
+
+<fieldset>
+		<p class="para">Indiqué l'achat que vous avez deja effectué</p>
+		<input type="checkbox" name="vetement" id="vetement" checked/> <label for="vetement" class="selection">vetement</label><!-- si on rajoute checked le bouton sera automatiquement decigner-->
+		
+		<br/>
+		
+		<input type="checkbox" name="capsule" id="capsule"/> <label for="capsule" class="selection" >capsule</label>
+		
+		<br/>
+		
+
+		<input type="checkbox" name="vehicule" id="vehicule"/> <label for="vehicule" class="selection">vehicule</label> 
+		
+</fieldset>
+
+<fieldset>
+		<input type="radio" name="sexe" value="HOMME" id="HOMME" /><label for="HOMME" class="selection">HOMME</label>
+		<br/>
+		<input type="radio" name="sexe" value="FEMME" id="FEMME"/><label for="FEMME" class="selection">FEMME</label>
+</fieldset>
+
+		
+		
+		
+<fieldset>
+		<legend class="selection">choix Pays</legend>
+		<label for="Pays">Votre pays</label>
+		<br/>
+
+		<select name="Pays" id="Pays">
+			<optgroup label="Europe">
+			<option value="FRANCE">FRANCE</option>
+			<option value="ALLEMAGNE">ALLEMAGNE</option></optgroup>
+			<optgroup label="Autre">
+			<option value="CANADA">CANADA</option>
+			<option value="UK">UK</option></optgroup>	
+		</select>
+		
+		<br/>
+</fieldset>
+
+<fieldset>
+		<!--<input type="color"/>-->
+		<br/>
+		<input type="date"/>
+		<br/>
+		<!--<input type="search"/>-->
+		<br/>
+ 		<input type="submit" name="envoyer" id="envoyer" value="Envoyer" />
+		</p>
+	</form>
+</fieldset>		
+	
+</article>
+
+<footer>
+<p id="signature"> Copyright WEILER William - Tous droits reserves </p>
+</footer>
+</body>
+
+</HTML>
